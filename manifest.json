@@ -1,21 +1,23 @@
 {
   "name": "SA ID Generator",
-  "version": "0.1",
+  "version": "0.2.1",
   "description": "South African ID Number generator",
   "permissions": [
+    "http://*/",
     "activeTab",
     "declarativeContent",
     "storage"
   ],
-  "options_page": "options.html",
   "background": {
     "scripts": [
-      "background.js"
+      "js/background.js"
     ],
     "persistent": false
   },
+  "options_page": "options.html",
   "browser_action": {
-    "default_popup": "popup.html",
+    "default_popup": "index.html",
+    "default_title": "Quickly generate South African ID numbers",
     "default_icon": {
       "16": "images/get_started16.png",
       "32": "images/get_started32.png",

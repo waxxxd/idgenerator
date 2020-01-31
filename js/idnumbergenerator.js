@@ -41,11 +41,11 @@ let preCheckValue = date + gender + nationality + race;
 
 let checksum = generateCheckSumDigit(preCheckValue);
 
-let idNumberButton = document.getElementById('IDNUMBER');
+let idNumberButton = document.getElementById('idnumber');
 idNumberButton.value = preCheckValue + checksum;
 
 window.addEventListener('load', function load(event) {
-    document.getElementById('clippy').onclick = function() {
+    document.getElementById('copy').onclick = function() {
         idNumberButton.select();
         document.execCommand('copy');
     };
